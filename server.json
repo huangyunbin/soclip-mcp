@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.huangyunbin/soclip",
+  "description": "Turn TikTok, Instagram, X and Facebook URLs into video download links and metadata.",
+  "repository": {
+    "url": "https://github.com/huangyunbin/soclip-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://soclip.dev",
+  "version": "0.1.4",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "soclip-mcp",
+      "version": "0.1.4",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SOCLIP_API_KEY",
+          "description": "soclip API key from https://soclip.dev/dashboard (500 free credits on signup)",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

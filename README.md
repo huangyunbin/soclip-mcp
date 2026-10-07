@@ -8,7 +8,7 @@
 
 Get your API key at [https://soclip.dev](https://soclip.dev).
 
-> Docs for `soclip-mcp@0.1.3` — last updated 2026-10-07.
+> Docs for `soclip-mcp@0.1.4` — last updated 2026-10-07.
 > Plain-text docs for AI agents: <https://soclip.dev/llms.txt>
 
 ## Setup & Configuration
