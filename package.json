@@ -1,0 +1,47 @@
+{
+  "name": "soclip-mcp",
+  "version": "0.1.3",
+  "mcpName": "io.github.huangyunbin/soclip",
+  "description": "Model Context Protocol (MCP) server for Soclip social video downloader API",
+  "homepage": "https://soclip.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangyunbin/soclip-mcp.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tiktok",
+    "instagram",
+    "video",
+    "downloader",
+    "api",
+    "mcp",
+    "soclip",
+    "claude",
+    "cursor",
+    "facebook"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "soclip-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --clean",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  }
+}
